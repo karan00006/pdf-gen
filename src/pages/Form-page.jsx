@@ -30,7 +30,7 @@ const pdfStyles = StyleSheet.create({
     padding: 48,
     color: '#202b3c',
     fontFamily: 'Helvetica',
-    fontSize: 10,
+    fontSize: 14,
   },
   topRow: {
     flexDirection: 'row',
@@ -263,6 +263,9 @@ function Form() {
     ...initialInvoice,
     items: [{ id: 1, description: 'Brand identity design', quantity: '1', rate: '2400' }],
   })
+
+  console.log(invoice);
+  
   const [mounted, setMounted] = useState(false)
   const nextItemId = useRef(2)
   const { subtotal, tax, total } = getInvoiceTotals(invoice)

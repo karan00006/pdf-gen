@@ -39,6 +39,9 @@ select {
   justify-content: space-between;
   background: #fff;
   border-bottom: 1px solid #e9ecf1;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .brand {
@@ -47,7 +50,7 @@ select {
   gap: 10px;
   color: #263d70;
   font-family: 'Manrope', sans-serif;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.8px;
   text-decoration: none;
@@ -82,7 +85,7 @@ select {
 .invoice-page {
   width: min(1320px, 100%);
   margin: 0 auto;
-  padding: 46px 32px 72px;
+  padding: 46px 0 72px;
 }
 
 .page-heading {
@@ -190,7 +193,7 @@ select {
 
 .step-number {
   width: 29px;
-  height: 29px;
+  height: 40px;
   display: grid;
   flex: 0 0 29px;
   place-items: center;
@@ -205,7 +208,7 @@ select {
   margin: 0;
   color: #293448;
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -246,7 +249,7 @@ select {
   outline: none;
   background: #fff;
   color: #293448;
-  font-size: 12px;
+  font-size: 14px;
   transition: border-color 120ms ease, box-shadow 120ms ease;
 }
 
@@ -254,7 +257,7 @@ select {
 .invoice-field select,
 .line-item-inputs input {
   height: 37px;
-  padding: 0 10px;
+  padding: 6px 10px;
 }
 
 .invoice-field textarea {
@@ -412,7 +415,7 @@ select {
 .paper-number {
   margin: 5px 0 0;
   color: #8791a1;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .paper-business {
@@ -422,15 +425,14 @@ select {
   align-items: flex-end;
   gap: 4px;
   color: #7e8999;
-  font-size: 9px;
+  font-size: 12px;
   text-align: right;
-  white-space: pre-line;
 }
 
 .paper-business strong {
   margin-bottom: 2px;
   color: #293448;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .paper-details {
@@ -447,21 +449,20 @@ select {
   align-items: flex-start;
   gap: 4px;
   color: #788496;
-  font-size: 9px;
-  white-space: pre-line;
+  font-size: 12px;
 }
 
 .paper-label {
   margin: 0 0 5px;
   color: #8994a5;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .bill-to strong {
   color: #293448;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .paper-dates {
@@ -470,7 +471,7 @@ select {
   align-items: flex-end;
   gap: 7px;
   color: #778396;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .paper-dates span {
@@ -497,11 +498,11 @@ select {
 
 .preview-table-head {
   min-height: 31px;
-  padding: 0 8px;
+  padding:8px;
   border-radius: 3px;
   background: #f1f4f8;
   color: #657187;
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -516,7 +517,7 @@ select {
   padding: 7px 8px;
   border-bottom: 1px solid #edf0f4;
   color: #788496;
-  font-size: 9px;
+  font-size: 12px;
   overflow-wrap: anywhere;
 }
 
@@ -526,14 +527,14 @@ select {
 
 .preview-table-row > strong {
   color: #303d53;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .paper-totals {
-  width: min(220px, 75%);
-  margin: 17px 0 0 auto;
+  /* width: min(220px, 75%); */
+  margin: 17px  0 auto;
   color: #788496;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .paper-totals > div {
@@ -548,11 +549,11 @@ select {
   padding-top: 12px;
   border-top: 1px solid #e7ebf1;
   color: #304b82;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .paper-notes {
-  margin-top: 37px;
+  margin-top: 25px;
   padding-top: 15px;
   border-top: 1px solid #edf0f4;
 }
@@ -560,7 +561,7 @@ select {
 .paper-notes p:last-child {
   margin: 0;
   color: #788496;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.6;
   white-space: pre-line;
 }
@@ -568,7 +569,7 @@ select {
 .paper-footer {
   margin-top: 30px;
   color: #a0a8b5;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
 }
 
