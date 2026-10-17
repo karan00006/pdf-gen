@@ -1,8 +1,11 @@
 import './index.css'
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
+import { Buffer } from 'buffer'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+globalThis.Buffer = Buffer
 
 const rootElement = document.getElementById('root')
 const app = (

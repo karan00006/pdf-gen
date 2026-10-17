@@ -13,6 +13,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^4.9.0",
     "bootstrap": "^5.3.8",
+    "buffer": "^6.0.3",
     "compression": "^1.8.1",
     "express": "^5.2.1",
     "react": "^19.2.8",

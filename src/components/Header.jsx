@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import logo from '../assets/react.svg';
+import logo from '../assets/logo1.jpg';
 import '../App.css'
 
 
@@ -11,7 +11,7 @@ function Header() {
         <div className="container">
           <div className="header-inner">
             <div className="logo">
-              <img src={logo} alt="LOGO" />
+              <img src={logo} alt="LOGO" width={40} height="auto"/>
             </div>
           </div>
         </div>

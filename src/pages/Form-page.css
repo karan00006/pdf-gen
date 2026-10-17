@@ -238,6 +238,186 @@ select {
   font-weight: 600;
 }
 
+.invoice-field > .field-error {
+  color: #b42318;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.field-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.image-upload {
+  min-width: 0;
+}
+
+.image-upload-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.image-upload-heading h3 {
+  margin: 0;
+  color: #38455b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.image-upload-heading h3 span {
+  margin-left: 5px;
+  color: #8993a3;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.image-upload-heading p {
+  margin: 3px 0 0;
+  color: #929baa;
+  font-size: 10px;
+}
+
+.image-count {
+  color: #788496;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.image-upload-dropzone {
+  min-height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 12px;
+  border: 1px dashed #cbd4e2;
+  border-radius: 8px;
+  background: #fafbfc;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.image-upload-dropzone:hover,
+.image-upload-dropzone:focus-within {
+  border-color: #879dc8;
+  background: #f6f8fc;
+}
+
+.image-upload-dropzone input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.image-upload-dropzone:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.image-upload-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  border-radius: 50%;
+  background: #edf1f8;
+  color: #405b98;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.image-upload-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.image-upload-copy strong {
+  color: #405b98;
+  font-size: 11px;
+}
+
+.image-upload-copy > span {
+  color: #8993a3;
+  font-size: 10px;
+}
+
+.image-upload-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.image-upload-card {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e8ebf0;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.image-upload-card > img {
+  width: 100px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background: #f1f4f8;
+}
+
+.image-upload-card figcaption {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 4px 6px;
+  color: #667186;
+  font-size: 9px;
+}
+
+.image-upload-card figcaption > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.image-upload-card figcaption button {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #8791a0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-upload-card figcaption button:hover {
+  background: #fdf0f0;
+  color: #b84e55;
+}
+
+.image-upload-card figcaption button:focus-visible {
+  outline: 2px solid #9aafd9;
+  outline-offset: 1px;
+}
+
 .invoice-field input,
 .invoice-field textarea,
 .invoice-field select,
@@ -530,6 +710,50 @@ select {
   font-size: 12px;
 }
 
+.paper-attachments {
+  margin-top: 17px;
+}
+
+.paper-attachments > p {
+  margin: 0 0 8px;
+  color: #657187;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.paper-attachments > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.paper-attachments figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e8ebf0;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.paper-attachments img {
+  /* width: 100px; */
+  /* height: 86px; */
+  display: block;
+  object-fit: cover;
+  background: #f1f4f8;
+}
+
+.paper-attachments figcaption {
+  overflow: hidden;
+  padding: 4px 6px;
+  color: #788496;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .paper-totals {
   /* width: min(220px, 75%); */
   margin: 17px  0 auto;
@@ -701,5 +925,13 @@ select {
     padding-right: 5px;
     padding-left: 5px;
     font-size: 8px;
+  }
+
+  .image-upload-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .paper-attachments img {
+    height: 68px;
   }
 }
