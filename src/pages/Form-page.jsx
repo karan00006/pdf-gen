@@ -624,7 +624,7 @@ function Form() {
                               aria-label={`Remove ${image.name}`}
                               onClick={() => removeImage(image.id)}
                             >
-                              ×
+                              
                             </button>
                           </figcaption>
                         </figure>
