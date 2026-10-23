@@ -479,7 +479,7 @@ function Form() {
         <span className="topbar-note">Simple invoicing, beautifully done</span>
       </header>
 
-      <div className="invoice-page">
+      <div className="invoice-page container">
         <div className="page-heading">
           <div>
             <p className="eyebrow">YOUR WORK, WELL PRESENTED</p>
